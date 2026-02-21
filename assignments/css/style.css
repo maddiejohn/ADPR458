@@ -1,0 +1,33 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+}
+header {
+    background-color: #F4C9D6;
+    color: #3E2723;
+    padding: 2rem;
+}
+
+h1 {
+font-size: 2rem;
+color: #3E2723;
+}
+h2 {
+font-size: 1.5rem;
+color: #3E2723;
+}
+h3 {
+font-size: 1.25rem;
+color: #3E2723;
+}
+img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+border: 5px solid #F4C9D6;
+}   
+p {
+line-height: 1.7;
+color: #3E2723;
+}
