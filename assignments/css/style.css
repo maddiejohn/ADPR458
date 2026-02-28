@@ -1,11 +1,13 @@
-body {
+*{
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 30px;
+}
+body {
+
+    margin: 0;
     background-image: url(../images/background.png);
 }
-.container {
-    background-color: white;
-}
+
 header {
     background-color: #f2c4cd;
     padding: 2rem;
@@ -34,4 +36,27 @@ border: 5px solid #f2c4cd;
 p {
 line-height: 1.7;
 color: #051f45;
+}
+
+/****** Layout *******/
+.container {
+    background-color: white;
+    display: grid;
+    gap: 1.5 rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+.container > * {
+    grid-column: span 12;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem) {
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
 }
