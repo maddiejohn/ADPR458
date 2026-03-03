@@ -69,6 +69,39 @@ a:hover {
     }
 }
 
+/****** Navigation Using Flexbox *******/
+nav {
+    background-color: #051f45;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+nav li {
+    margin: 0 0.5rem;
+}
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+nav a:hover {
+    background-color:#f2c4cd;
+    color: white;
+}
+
+
 /****** Components *******/
 .button:link, .button:visited {
     color: white;
