@@ -37,6 +37,14 @@ p {
 line-height: 1.7;
 color: #051f45;
 }
+a:link, a:visited {
+    color:#f2c4cd;
+    text-decoration: none;
+}
+a:hover {
+    color:#f3afbd;
+    text-decoration: underline;
+}
 
 /****** Layout *******/
 .container {
@@ -59,4 +67,21 @@ color: #051f45;
     .col-span-4 {
         grid-column: span 4;
     }
+}
+
+/****** Components *******/
+.button:link, .button:visited {
+    color: white;
+    background-color: #f2c4cd;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    border-radius: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    display: inline-block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: #f3afbd;
 }
