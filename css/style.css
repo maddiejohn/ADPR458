@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: "mencken-std-head-narrow", sans-serif;
+}
+
+p {
+    font-family: "franklin-gothic-std", sans-serif;
+}
+
+.nav {
+  background: #770523; /* burgundy */
+  color: #FAD2E1; /* light pink */
+  font-family: "mencken-std-head-narrow", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 35px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  color: #FAD2E1; /* light pink */
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background: #FAD2E1;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.hero {
+  height: 770px;
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: 50% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: #fad2e1;
+  grid-column: 2;
+  justify-self: start;
+  text-align: left;
+  width: 650px;
+  margin-left: 120px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 155px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 0.92;
+}
+
+.hero-text p {
+  margin: 0;
+  margin-top: 6px;
+  font-size: 22px;
+  color: #f8dce8;
+  letter-spacing: 1px;
+}
+
+/* MY WORK */
+
+.work {
+  background: #f5efea;
+  padding: 40px 40px 100px;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 120px;
+  color: #770523;
+  margin-bottom: 55px;
+  margin-top: 2%;
+  font-weight: normal;
+}
+
+.work-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.work-item img {
+  width: 380px;
+  height: 420px;
+  object-fit: cover;
+}
+
+.work-item p {
+  margin-top: 12px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #770523;
+}
+
+.work-item,
+.featured-item {
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover,
+.featured-item:hover {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 900px) {
+  .work-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FEATURED WORK */
+
+.featured {
+  background: #FAD2E1; /* light pink */
+  padding: 80px 60px;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.featured-header h2 {
+  font-family: "mencken-std-head-narrow", sans-serif;
+  font-size: 90px;
+  color: #770523;
+  margin: 0;
+  font-weight: 400;
+}
+
+.featured-header a {
+  font-family: "franklin-gothic-std", sans-serif;
+  text-decoration: none;
+  color: #770523;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.featured-header a:hover {
+  transform: translateX(5px);
+}
+
+.featured-header a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #770523;
+  transition: width 0.3s ease;
+}
+
+.featured-header a:hover::after {
+  width: 100%;
+}
+
+.featured-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.featured-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.featured-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.featured-item {
+  flex: 1;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-item:hover {
+  transform: translateY(-5px);
+}
+
+.featured-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(119, 5, 35, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-item:hover::after {
+  opacity: 1;
+}
+
+.featured-item p {
+  margin-top: 15px;
+  font-family: "franklin-gothic-std", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #770523;
+}
