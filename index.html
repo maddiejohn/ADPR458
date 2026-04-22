@@ -10,67 +10,91 @@
 
 <header class="nav">
   <div class="nav-container">
-    <div class="logo">Maddie John</div>
-
+    <div class="logo">
+        <a href="index.html">Maddie John</a>
+    </div>
     <nav class="links">
-      <a href="#">Work</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Maddie John</h1>
-    <p>STRATEGIC CAMPAIGNS | DESIGN | PHOTOGRAPHY</p>
+<main>
+  <section class="home-hero fade-in">
+    <div class="hero-left">
+      <h1>Maddie John</h1>
+      <p>Print, design, and social media projects.</p>
+      <a href="projects.html" class="primary-btn">View All Projects</a>
+    </div>
+
+    <div class="hero-right">
+      <a href="walmart.html" class="preview-card">
+        <div class="preview-image-wrap">
+          <img src="images/walmart.jpg" alt="Walmart campaign project">
+        </div>
+        <h3>“That’s Walmart?” Campaign</h3>
+      </a>
+
+      <a href="barefoot.html" class="preview-card">
+        <div class="preview-image-wrap">
+          <img src="images/barefoot.jpg" alt="Barefoot St. Patrick's Day Campaign">
+        </div>
+        <h3>Barefoot St. Patrick's Day Campaign</h3>
+      </a>
+
+      <a href="WGRA.html" class="preview-card">
+        <div class="preview-image-wrap">
+          <img src="images/WGRA.jpg" alt="Wheelie Good Ride Academy">
+        </div>
+        <h3>Wheelie Good Ride Academy</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="home-about fade-in">
+    <div class="home-about-inner">
+      <div class="home-about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m an advertising and public relations student focused on print, design,
+          and social media. I love creating work that feels thoughtful, polished,
+          and strategically strong.
+        </p>
+
+        <a href="about-contact.html" class="secondary-btn">
+          Learn More →
+        </a>
+      </div>
+
+  <div class="home-about-image">
+    <img src="images/aboutmaddie.jpeg">
   </div>
-</section>
+  </section>
+</main>
 
-<section class="work">
-  <h2 class="work-title">My Work</h2>
-
-  <div class="work-grid">
-    <div class="work-item">
-      <img src="images/campaign.jpg" alt="">
-      <p>STRATEGIC CAMPAIGNS</p>
+  <footer class="footer">
+    <div class="footer-left">Maddie John</div>
+    <div class="footer-right">
+      <a href="projects.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
+  </footer>
 
-    <div class="work-item">
-      <img src="images/design.jpg" alt="">
-      <p>DESIGN</p>
-    </div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.12 });
 
-    <div class="work-item">
-      <img src="images/photo.jpg" alt="">
-      <p>PHOTOGRAPHY</p>
-    </div>
-  </div>
-</section>
-
-<section class="featured">
-  <div class="featured-header">
-    <h2>Featured Projects</h2>
-    <a href="#">VIEW ALL PROJECTS →</a>
-  </div>
-
-  <div class="featured-grid">
-    <div class="featured-item">
-      <img src="images/walmart.jpg" alt="Walmart Campaign">
-      <p>“THAT’S WALMART?” CAMPAIGN</p>
-    </div>
-
-    <div class="featured-item">
-      <img src="images/project2.jpg" alt="Barefoot Campaign">
-      <p>BAREFOOT CAMPAIGN</p>
-    </div>
-
-    <div class="featured-item">
-      <img src="images/project3.jpg" alt="Campaign">
-      <p>CAMPAIGN</p>
-    </div>
-  </div>
-</section>
+    document.querySelectorAll(".fade-in").forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>

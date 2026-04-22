@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About & Contact</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+        <a href="index.html">Maddie John</a>
+    </div>
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="about-contact-page">
+  <section class="about-contact-intro fade-in">
+    <h1>About & Contact</h1>
+    <p>
+      I’m an advertising and public relations student interested in print, design,
+      and social media.
+    </p>
+  </section>
+
+  <section class="about-section fade-in">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I’m building a portfolio focused on strategic communication and visual storytelling.
+        My work reflects an interest in branding, campaign development, digital design, and content creation.
+      </p>
+      <p>
+        I’m especially interested in opportunities that let me combine creativity with strategy
+        and continue growing as a communicator and designer.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/aboutmaddie.jpeg">
+    </div>
+  </section>
+
+  <section class="contact-section fade-in">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for internships or collaborations.</p>
+
+    <div class="contact-links">
+      <a href="mailto:maddiejohn6@gmail.com">maddiejohn6@gmail.com</a>
+      <a href="https://www.linkedin.com/in/maddie-john-897763309" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/madelineajohn/" target="_blank">Instagram</a>
+    </div>
+
+    <a href="mailto:maddiejohn6@gmail.com" class="primary-btn">Get In Touch</a>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="footer-left">Maddie John</div>
+    <div class="footer-right">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">About</a>
+      <a href="about-contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".fade-in").forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

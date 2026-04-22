@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maddie John's Projects</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+        <a href="index.html">Maddie John</a>
+    </div>
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="projects-page">
+  <section class="projects-intro fade-in">
+    <h1>Projects</h1>
+    <p>
+      A collection of print, design, and social media work that highlights strategy,
+      visual storytelling, and creative execution.
+    </p>
+  </section>
+
+  <section class="fade-in">
+    <div class="project-grid">
+      <a href="walmart.html" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/walmart.jpg" alt="Walmart campaign">
+        </div>
+        <h3>“That’s Walmart?” Campaign</h3>
+      </a>
+
+      <a href="barefoot.html" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/barefoot.jpg" alt="Barefoot campaign">
+        </div>
+        <h3>Barefoot St. Patrick's Day Campaign</h3>
+      </a>
+
+      <a href="WGRA.html" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/WGRA.jpg" alt="Wheelie Good Ride Academy">
+          <span class="project-tag">Social Media</span>
+        </div>
+        <h3>Wheelie Good Ride Academy</h3>
+      </a>
+
+      <a href="popcorn.html" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/popcornposter.jpg" alt="Popcorn project">
+          <span class="project-tag">Print</span>
+        </div>
+        <h3>Elkhorn South Popcorn Poster</h3>
+      </a>
+
+      <a href="ikea.html" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/ikea.jpg" alt="Ikea project">
+          <span class="project-tag">Print</span>
+        </div>
+        <h3>Ikea Magazine Ad</h3>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="project-image-wrap">
+          <img src="images/placeholder.jpg" alt="Coming soon project">
+          <span class="project-tag">Coming Soon</span>
+        </div>
+        <h3>New Brand Campaign</h3>
+      </a>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="footer-left">Maddie John</div>
+    <div class="footer-right">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">About</a>
+      <a href="about-contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".fade-in").forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
