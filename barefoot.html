@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barefoot St. Patrick's Day Campaign | Maddie John</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Maddie John</a>
+    </div>
+
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case-study-page">
+
+  <section class="case-study-intro fade-in">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <h1>"Sip Me, I'm Irish" Campaign</h1>
+
+    <p>
+      A campaign concept created to position Barefoot Wine as a festive option
+      for St. Patrick’s Day, a holiday usually dominated by beer.
+    </p>
+  </section>
+
+  <section class="case-video fade-in">
+    <h2>Case Study Video</h2>
+
+    <div class="video-wrap">
+      <div class="video-placeholder">
+        <video controls class="case-study-video">
+          <source src="videos/barefoot-case-study.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-brief fade-in">
+    <h2>The Brief</h2>
+    <p>
+      The goal was to convince consumers to consider Barefoot Wine as a festive alternative to beer on St. Patrick’s Day.
+      The challenge was that people automatically associate the holiday with beer
+      and often do not consider wine as a festive party drink.
+    </p>
+  </section>
+
+  <section class="case-breakdown fade-in">
+    <div class="case-card">
+      <h2>Problem</h2>
+      <p>
+        St. Patrick’s Day is seen as a beer holiday, so wine drinkers often switch
+        to beer because they want to fit in with the tradition.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h2>Insight</h2>
+      <p>
+        Wine drinkers switch to beer on St. Patrick’s Day because they do not want
+        to feel left out of the celebration.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h2>Solution</h2>
+      <p>
+        Make Barefoot feel like part of the St. Patrick’s Day tradition by turning
+        wine into a festive, fun, and on-theme choice for the holiday.
+      </p>
+    </div>
+  </section>
+
+  <section class="case-credit fade-in">
+    <h2>Project Credit</h2>
+    <p>
+      Created in collaboration with my design partner: Susie Kastl.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">Maddie John</div>
+  <div class="footer-right">
+    <a href="projects.html">Work</a>
+    <a href="about-contact.html">About</a>
+    <a href="about-contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade-in").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

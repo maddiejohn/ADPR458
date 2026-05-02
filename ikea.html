@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IKEA Campaign | Maddie John</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Maddie John</a>
+    </div>
+
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case-study-page">
+
+  <section class="case-study-intro fade-in">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+    
+    <h1>"Home Moves With You" Campaign</h1>
+    
+    <p>
+     A campaign exploring how IKEA helps young adults create a sense of home,
+     even in temporary or shared spaces.
+   </p>
+
+  </section>
+
+
+ <section class="case-brief fade-in">
+   <h2>Creative Brief</h2>
+
+
+   <p>
+     IKEA’s goal was to connect with Gen Z and young Millennials living in dorms,
+     apartments, or shared spaces who want their environments to feel personal,
+     even if they are temporary or on a budget.
+   </p>
+
+
+   <p>
+     The campaign communicates that IKEA makes it possible to create a space that
+     feels like home—no matter where you are.
+   </p>
+ </section>
+
+  <section class="ikea-deliverables fade-in">
+    <h2>Campaign Deliverables</h2>
+
+    <div class="ikea-piece">
+      <div class="ikea-piece-text">
+        <h3>Magazine Ad</h3>
+      </div>
+
+      <div class="ikea-image-pair">
+        <div>
+          <img src="images/ikea-magazine-mockup.jpg" alt="IKEA magazine ad mockup">
+          <p class="image-label">Mockup</p>
+        </div>
+
+        <div>
+          <img src="images/ikea-magazine.jpg" alt="IKEA magazine ad flat design">
+          <p class="image-label">Flat Design</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ikea-piece">
+      <div class="ikea-piece-text">
+        <h3>Bus Shelter Ad</h3>
+      </div>
+
+      <div class="ikea-image-pair">
+        <div>
+          <img src="images/ikea-bus-mockup.jpg" alt="IKEA bus shelter ad mockup">
+          <p class="image-label">Mockup</p>
+        </div>
+
+        <div>
+          <img src="images/ikea-bus.jpg" alt="IKEA bus shelter ad flat design">
+          <p class="image-label">Flat Design</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ikea-piece">
+      <div class="ikea-piece-text">
+        <h3>Billboard</h3>
+      </div>
+
+      <div class="ikea-image-pair billboard-stack">
+        <div>
+          <img src="images/ikea-billboard-mockup.jpg" alt="IKEA billboard mockup">
+          <p class="image-label">Mockup</p>
+        </div>
+
+        <div>
+          <img src="images/ikea-billboard.jpg" alt="IKEA billboard flat design">
+          <p class="image-label">Flat Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-credit fade-in">
+    <h2>Project Credit</h2>
+    <p>
+      Magazine ad design by my partner, Jack Hughs. Magazine copy, bus shelter ad, and billboard created by me.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">Maddie John</div>
+  <div class="footer-right">
+    <a href="projects.html">Work</a>
+    <a href="about-contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade-in").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

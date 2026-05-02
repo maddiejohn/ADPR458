@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nebraska Goods Collective | Maddie John</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Maddie John</a>
+    </div>
+
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case-study-page">
+
+  <section class="case-study-intro fade-in">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <h1>Nebraska Goods Collective</h1>
+
+    <p>
+      A brand campaign celebrating local Nebraska makers through a warm,
+      thoughtful visual identity and community-focused advertising.
+    </p>
+  </section>
+
+  <section class="case-brief manifesto-box fade-in">
+    <div class="manifesto-card">
+    <h2>Brand Manifesto</h2>
+    <p> 
+        99% of all businesses in Nebraska are small businesses. They empower our community through creativity, innovation, and sustainability. We believe these businesses deserve to be seen, supported, and given the opportunity to thrive. We believe Nebraskans can strengthen our communities by shopping locally and sustainably.  
+    </p>
+   
+    <p>
+        Many people want to support local businesses but aren’t aware of the ones around them. Nebraska Goods Collective exists to make discovering and supporting Nebraska’s small businesses simple, accessible, and meaningful. We bring small businesses together on an all-in-one platform so you can feel proud of where you shop and who you support.  
+    </p>
+    
+    <p>
+        We promise to create opportunities for small businesses to grow and give customers a shopping experience that feels exciting and meaningful. Every purchase you make through Nebraska Goods Collective directly supports a small business, strengthens our state, and paves the way for a more sustainable future.  
+    </p>
+    
+    <p>
+        Our vision is to make buying from Nebraska’s small businesses a routine decision. Invest in homemade goods and help us create a future where local businesses succeed.  
+    </p>
+    
+    <p>
+        Shop with Intention. Shop Nebraska. 
+    </p>
+    </div>
+  </section>
+
+  <section class="ngc-deliverables fade-in">
+    <h2>Brand Identity</h2>
+
+    <div class="ngc-feature-piece">
+      <img src="images/NGC-preview.jpg" alt="Nebraska Goods Collective logo">
+      <div>
+        <h3>Logo Design</h3>
+        <p>
+          A visual identity created to feel local, warm, handcrafted, and rooted
+          in Nebraska pride.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ngc-deliverables fade-in">
+    <h2>Campaign Deliverables</h2>
+
+    <div class="ngc-grid">
+      <div class="ngc-piece">
+        <img src="images/ngc-magazine.jpg" alt="Nebraska Goods Collective magazine ad">
+        <h3>Magazine Ad</h3>
+      </div>
+
+      <div class="ngc-piece">
+        <img src="images/ngc-bus-shelter.jpg" alt="Nebraska Goods Collective bus shelter ad">
+        <h3>Bus Shelter Ad</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="ngc-deliverables fade-in">
+    <h2>Social Media Ads</h2>
+
+    <div class="ngc-social-grid">
+      <div class="ngc-piece">
+        <img src="images/ngc-social-1.jpg" alt="Nebraska Goods Collective social ad one">
+        <h3>Social Ad 01</h3>
+      </div>
+
+      <div class="ngc-piece">
+        <img src="images/ngc-social-2.jpg" alt="Nebraska Goods Collective social ad two">
+        <h3>Social Ad 02</h3>
+      </div>
+
+      <div class="ngc-piece">
+        <img src="images/ngc-social-3.jpg" alt="Nebraska Goods Collective social ad three">
+        <h3>Social Ad 03</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="ngc-deliverables fade-in">
+    <h2>Brand Activation</h2>
+
+    <div class="ngc-feature-piece">
+      <img src="images/ngc-activation.jpg" alt="Nebraska Goods Collective brand activation visualization">
+      <div>
+        <h3>Activation Concept</h3>
+        <p>
+          A visual concept showing how Nebraska Goods Collective could appear in
+          a real community experience or interactive brand moment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">Maddie John</div>
+  <div class="footer-right">
+    <a href="projects.html">Work</a>
+    <a href="about-contact.html">About</a>
+    <a href="about-contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade-in").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

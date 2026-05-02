@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wheelie Good Ride Academy | Maddie John</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Maddie John</a>
+    </div>
+
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case-study-page">
+
+  <section class="case-study-intro fade-in">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <h1>Wheelie Good Ride Academy</h1>
+
+    <p>
+      A nonprofit campaign created to raise awareness and encourage donations
+      for a Lincoln organization that helps kids and beginners learn to ride.
+    </p>
+  </section>
+
+  <section class="case-brief fade-in">
+    <h2>About the Nonprofit</h2>
+    <p>
+      Wheelie Good Ride Academy helps make biking fun, accessible, and empowering
+      for families in Lincoln. The organization teaches bike riding classes for
+      ages 4 and up, and also supports the biking community through a bike shop
+      and bike club.
+    </p>
+  </section>
+
+  <section class="case-breakdown fade-in">
+    <div class="case-card">
+      <h2>Campaign Goal</h2>
+      <p>
+        Raise awareness around donations and encourage people to support kids
+        learning to ride.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h2>Target Audience</h2>
+      <p>
+        Parents with children ages 4 and up and Lincoln families
+        who value confidence, outdoor activity, and accessible community programs.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h2>Focus</h2>
+      <p>
+        The campaign centers on the “I did it” moment; the confidence and joy
+        kids feel when they learn to ride a bike.
+      </p>
+    </div>
+  </section>
+
+  <section class="wgra-work fade-in">
+    <h2>Social Media Ads</h2>
+
+    <div class="wgra-social-grid">
+      <img src="images/WGRA-social-1.jpg" alt="Wheelie Good Ride Academy social media ad one">
+      <img src="images/WGRA-social-2.jpg" alt="Wheelie Good Ride Academy social media ad two">
+      <img src="images/WGRA-social-3.jpg" alt="Wheelie Good Ride Academy social media ad three">
+    </div>
+  </section>
+
+  <section class="wgra-work fade-in">
+    <h2>Landing Page</h2>
+
+    <div class="wgra-landing-page">
+      <img src="images/WGRA-landing-page.jpg" alt="Wheelie Good Ride Academy landing page">
+    </div>
+  </section>
+  
+  <section class="case-credit fade-in">
+    <h2>Project Note</h2>
+    <p>
+      This was a group campaign, but the work shown on this page was completed
+      individually by me.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">Maddie John</div>
+  <div class="footer-right">
+    <a href="projects.html">Work</a>
+    <a href="about-contact.html">About</a>
+    <a href="about-contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade-in").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>That’s Walmart? Campaign | Maddie John</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjv5hiz.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Maddie John</a>
+    </div>
+
+    <nav class="links">
+      <a href="projects.html">Work</a>
+      <a href="about-contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case-study-page">
+
+  <section class="case-study-intro fade-in">
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <h1>“That’s Walmart?” Campaign</h1>
+    <p>
+      A campaign designed to shift Gen Z’s perception of Walmart fashion
+      by making affordable style feel surprising, trendy, and worth sharing.
+    </p>
+  </section>
+  
+  <section class="case-video fade-in">
+    <h2>Case Study Video</h2>
+    
+    <div class="video-wrap">
+        <video controls class="case-study-video">
+            <source src="videos/walmart-case-study.mp4" type="video/mp4">
+        </video>
+    </div>
+
+  </section>
+
+  <section class="case-breakdown fade-in">
+    <div class="case-card">
+      <h2>Problem</h2>
+      <p>Gen Z does not naturally think of Walmart when they think about fashion.</p>
+    </div>
+
+    <div class="case-card">
+      <h2>Insight</h2>
+      <p>College students love being surprised by style and value.</p>
+    </div>
+
+    <div class="case-card">
+      <h2>Solution</h2>
+      <p>Show Walmart fashion in unexpected ways that make students ask, “That’s Walmart?”</p>
+    </div>
+  </section>
+
+  <section class="case-gallery fade-in">
+    <h2>Campaign Pieces</h2>
+
+    <div class="case-gallery-grid">
+      <img src="images/walmart-influencer.jpg" alt="Walmart social campaign mockups">
+      <img src="images/walmart-tiktok.jpg" alt="Walmart campaign social reactions">
+      <img src="images/walmart.jpg" alt="That’s Walmart billboard mockup">
+    </div>
+  </section>
+
+  <section class="case-credit fade-in">
+    <h2>Project Credit</h2>
+    <p>
+      Created in collaboration with my project partners: Livia Ziskey, Nina Kudlacz, and Payton Pohlad.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">Maddie John</div>
+  <div class="footer-right">
+    <a href="projects.html">Work</a>
+    <a href="about-contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade-in").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
