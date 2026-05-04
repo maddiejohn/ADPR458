@@ -1001,3 +1001,221 @@ p {
     min-height: 260px;
   }
 }
+
+/* =========================
+   COPY & CONCEPT PORTFOLIO PAGE
+========================= */
+
+.copy-portfolio-page {
+  width: min(94%, 1250px);
+  margin: 0 auto;
+  padding: 80px 0 100px;
+}
+
+.copy-intro {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.copy-intro h1 {
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.95;
+  margin-bottom: 18px;
+}
+
+.copy-intro p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #65424d;
+}
+
+.copy-project {
+  margin-bottom: 120px;
+}
+
+.copy-project-heading {
+  margin-bottom: 38px;
+}
+
+.copy-project-heading h2 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  margin-bottom: 12px;
+}
+
+.copy-project-heading p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #65424d;
+  max-width: 780px;
+}
+
+.project-credit {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.strategy-card {
+  background: var(--pink);
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.strategy-card h3 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.strategy-card p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #65424d;
+}
+
+.three-image-grid,
+.four-image-grid {
+  display: grid;
+  gap: 26px;
+  margin-top: 34px;
+}
+
+.three-image-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.four-image-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.three-image-grid img,
+.four-image-grid img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(119, 5, 35, 0.15);
+}
+
+@media (max-width: 1000px) {
+  .strategy-grid,
+  .three-image-grid,
+  .four-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .copy-project {
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: 470px) {
+  .copy-portfolio-page {
+    padding: 50px 0 70px;
+  }
+
+  .copy-intro h1 {
+    font-size: 3.4rem;
+  }
+
+  .copy-project-heading h2 {
+    font-size: 3rem;
+  }
+
+  .strategy-card {
+    padding: 24px;
+  }
+}
+.campaign-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.campaign-pair h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.campaign-pair img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(119, 5, 35, 0.15);
+}
+
+@media (max-width: 800px) {
+  .campaign-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-title {
+  margin-bottom: 20px;
+}
+
+.project-title h2 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  margin-bottom: 6px;
+}
+
+.project-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9a6b75;
+}
+
+.campaign-pair img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bigger campaign visuals for case study sections */
+.copy-project .four-image-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.four-image-grid img {
+  transition: transform 0.4s ease;
+}
+
+.four-image-grid img:hover {
+  transform: scale(1.05);
+}
+
+.campaign-pair > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campaign-pair h3 {
+  width: 500px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.campaign-pair div {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.campaign-pair img {
+  transition: transform 0.4s ease;
+}
+
+.campaign-pair div:hover img {
+  transform: scale(1.06);
+}
