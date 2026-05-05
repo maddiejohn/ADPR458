@@ -885,6 +885,42 @@ p {
   line-height: 1.8;
 }
 
+.ngc-feature-piece {
+  margin-top: 40px;
+}
+
+/* Images row */
+.ngc-activation-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.ngc-activation-images img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Pink text box */
+.activation-box {
+  background: var(--pink);
+  border-radius: 28px;
+  padding: 36px;
+  margin-top: 28px;
+  max-width: 900px;
+}
+
+.activation-box h3 {
+  margin-bottom: 12px;
+}
+
+.activation-box p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
 /* =========================
    WGRA PROJECT PAGE
 ========================= */
